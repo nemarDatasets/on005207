@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Surrey cEEGrid sleep data set",
+  "description": "This dataset comprises nightly electroencephalogram (EEG) recordings from 20 healthy participants collected during a wearable sleep monitoring study in spring 2017. The collection includes both full polysomnography (PSG) and cEEGrid measurements, with most subjects having recordings from the same night using both modalities. The data are formatted according to the Brain Imaging Data Structure (BIDS) and were previously used to develop machine-learning approaches for automated sleep-wake staging.",
+  "methods_description": "EEG recordings were collected during overnight sleep sessions at the Surrey Clinical Research Centre sleep laboratory. Recording equipment was mounted immediately prior to bedtime. Data were acquired using both full polysomnography (PSG) and cEEGrid (around-the-ear EEG) measurement systems, with most subjects having simultaneous recordings from both modalities on the same night.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -28,56 +30,6 @@
     "Annette Sterr": {},
     "Maarten De Vos": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds005207.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on005207",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005207",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1111/jsr.12786",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".AWD",
-    ".bdf",
-    ".csv",
-    ".edf",
-    ".fdt",
-    ".json",
-    ".m",
-    ".mat",
-    ".md",
-    ".mlx",
-    ".py",
-    ".pyc",
-    ".set",
-    ".tsv",
-    ".txt",
-    ".xlsx"
-  ],
-  "description": "This dataset comprises nightly EEG recordings from 20 healthy participants collected during a wearable sleep monitoring study in spring 2017. The collection includes both full polysomnography (PSG) and cEEGrid measurements, with most subjects having recordings from the same night using both modalities. The data are formatted according to BIDS specifications and were used to develop machine learning approaches for automated sleep-wake staging from around-the-ear EEG.",
-  "methods_description": "EEG recordings were collected during sleep at the Surrey Clinical Research Centre sleep laboratory. Recording equipment was mounted immediately prior to bedtime. Data include both full polysomnography (PSG) measurements and cEEGrid recordings. EEG data are stored in EEGLAB .set format.",
   "keywords": [
     {
       "term": "EEG"
@@ -100,5 +52,54 @@
       "term": "machine learning"
     }
   ],
-  "source_hash": "62cbc4200ddacde70ff742bc2edfb3a82f895fdbfaca25c8d7c2128f41a56456"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on005207",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005207",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1111/jsr.12786",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005207.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "74.2 GB (377 files)"
+  ],
+  "formats": [
+    ".AWD",
+    ".bdf",
+    ".csv",
+    ".edf",
+    ".fdt",
+    ".json",
+    ".m",
+    ".mat",
+    ".md",
+    ".mlx",
+    ".py",
+    ".pyc",
+    ".set",
+    ".tsv",
+    ".txt",
+    ".xlsx",
+    ".yml"
+  ],
+  "source_hash": "e92ccb81da3e6bb04673055b984e8d1278c80cfd72f60c76f0eb8f0c93651e6f"
 }
