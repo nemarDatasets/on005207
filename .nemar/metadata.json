@@ -1,0 +1,38 @@
+{
+  "version": "2.0",
+  "dataset_id": "on005207",
+  "source": "openneuro",
+  "source_id": "ds005207",
+  "title": "Surrey cEEGrid sleep data set",
+  "authors": {
+    "Kaare B. Mikkelsen": {},
+    "James K Ebajemito": {},
+    "Maria A Bonmati-Carrion": {},
+    "Nayantara Santhi": {},
+    "Victoria L Revell": {},
+    "Giuseppe Atzori": {},
+    "Laura Birch": {},
+    "Ciro Della Monica": {},
+    "Stefan Debener": {},
+    "Derk-Jan Dijk": {},
+    "Annette Sterr": {},
+    "Maarten De Vos": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds005207.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.7.0",
+  "recording_modality": [
+    "eeg"
+  ],
+  "datatypes": [
+    "eeg"
+  ]
+}
