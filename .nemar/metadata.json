@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Surrey cEEGrid sleep data set",
-  "description": "This dataset comprises nightly electroencephalogram (EEG) recordings from 20 healthy participants collected during a wearable sleep monitoring study in spring 2017. The collection includes both full polysomnography (PSG) and cEEGrid measurements, with most subjects having recordings from the same night using both modalities. The data are formatted according to the Brain Imaging Data Structure (BIDS) and were previously used to develop machine-learning approaches for automated sleep-wake staging.",
-  "methods_description": "EEG recordings were collected during overnight sleep sessions at the Surrey Clinical Research Centre sleep laboratory. Recording equipment was mounted immediately prior to bedtime. Data were acquired using both full polysomnography (PSG) and cEEGrid (around-the-ear EEG) measurement systems, with most subjects having simultaneous recordings from both modalities on the same night.",
+  "description": "This dataset comprises nightly electroencephalogram (EEG) recordings from 20 healthy participants collected during a wearable sleep monitoring study in spring 2017. The collection includes both full polysomnography (PSG) and cEEGrid measurements, with most subjects having recordings from the same night using both modalities. The data are formatted according to the Brain Imaging Data Structure (BIDS) and were previously used to develop machine learning approaches for automated sleep-wake staging.",
+  "methods_description": "EEG recordings were collected during overnight sleep sessions at the Surrey Clinical Research Centre. Recording equipment was mounted immediately prior to bedtime. Data were acquired using both full polysomnography (PSG) and cEEGrid (around-the-ear EEG) measurement systems. EEG data are stored in EEGLAB .set format.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -35,7 +35,9 @@
       "term": "EEG"
     },
     {
-      "term": "sleep monitoring"
+      "term": "Sleep",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012890"
     },
     {
       "term": "Polysomnography",
@@ -46,7 +48,7 @@
       "term": "wearable sensors"
     },
     {
-      "term": "sleep-wake staging"
+      "term": "sleep staging"
     },
     {
       "term": "machine learning"
