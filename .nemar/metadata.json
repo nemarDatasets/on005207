@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Surrey cEEGrid sleep data set",
-  "description": "This dataset comprises nightly electroencephalogram (EEG) recordings from 20 healthy participants collected during a wearable sleep monitoring study in spring 2017. The collection includes both full polysomnography (PSG) and cEEGrid measurements, with most subjects having recordings from the same night using both modalities. The data are formatted according to the Brain Imaging Data Structure (BIDS) and were previously used to develop machine learning approaches for automated sleep-wake staging.",
-  "methods_description": "EEG recordings were collected during overnight sleep sessions at the Surrey Clinical Research Centre. Recording equipment was mounted immediately prior to bedtime. Data were acquired using both full polysomnography (PSG) and cEEGrid (around-the-ear EEG) measurement systems. EEG data are stored in EEGLAB .set format.",
+  "description": "This dataset comprises overnight sleep EEG recordings from 20 healthy participants, collected in spring 2017 as part of a wearable sleep monitoring study at the Surrey Clinical Research Centre. Recordings include full polysomnography (PSG) and around-the-ear cEEGrid measurements, with most subjects having both modalities recorded on the same night. The dataset supports comparison between conventional PSG and wearable cEEGrid sleep staging approaches.",
+  "methods_description": "Participants underwent overnight sleep recordings with equipment mounted immediately prior to bedtime at the sleep laboratory of the Surrey Clinical Research Centre. Recordings consisted of full polysomnography (PSG) and/or around-the-ear cEEGrid EEG measurements, with no tasks performed by subjects during sleep. Alignment between cEEGrid and PSG recordings was not preserved during data collection, requiring post-hoc alignment processing shared as a derivative dataset ('aligned1').",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -45,10 +45,13 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D017286"
     },
     {
-      "term": "wearable sensors"
+      "term": "cEEGrid"
     },
     {
       "term": "sleep staging"
+    },
+    {
+      "term": "wearable EEG"
     },
     {
       "term": "machine learning"
@@ -61,11 +64,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005207",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.1111/jsr.12786",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
@@ -74,6 +72,11 @@
       "identifier": "10.18112/openneuro.ds005207.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005207",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
